@@ -1,0 +1,282 @@
+.main-container {
+    background-color: #FFFFFF;
+    margin-top: 44px;
+    margin-bottom: 44px;
+    display: flex;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 935px;
+    padding: 0 0 8px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.content {
+    width: 100%;
+    max-width: 614px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.stories {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 16px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stories::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #DBDBDB;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.story {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.story_avatar {
+    position: relative;
+}
+
+.story_border {
+    width: 64px;
+    height: 64px;
+    fill: none;
+    stroke: #C7C7C7;
+    stroke-width: 1.5;
+}
+
+.story_picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.storey_user {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+    max-width: 72px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.stories_content {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 0 16px;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.stories_content::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.post_header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.post_profile {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.post_avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.post_user {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.post_user:hover {
+    text-decoration: underline;
+}
+
+.post_more-options {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.post_content {
+    display: flex;
+    position: relative;
+}
+
+.post_medias {
+    display: flex;
+    overflow-y: hidden ;
+    overflow-x: auto;
+
+    width: 100%;
+}
+
+.post_footer {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 4px;
+}
+
+.post_buttons {
+    display: flex;
+    position: relative;
+}
+
+.post_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    padding: 8px;
+}
+
+.post_button--align-right {
+    margin-left: auto;
+}
+
+.post_infos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    gap: 10px;
+}
+
+.post_likes,
+.post_description {
+    display: flex;
+}
+
+.post_likes {
+    align-items: center;
+    gap: 6px;
+}
+
+.post_likes-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.post_likes span,
+  .post_description span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #262626;
+  }
+  
+  .post_likes a,
+  .post_description a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+    text-decoration: none;
+  }
+  
+  .post_name--underline:hover {
+    text-decoration: underline;
+  }
+  
+  .post_date-time {
+    font-size: 10px;
+    font-weight: 400;
+    color: #999999;
+    text-transform: uppercase;
+  }
+ 
+
+@media (min-width: 620px) {
+    .content-container {
+        padding: 30px 0 24px;
+    }
+
+    .content {
+        gap: 24px;
+    }
+
+    .stories {
+        border: 1px solid #DBDBDB;
+        border-radius: 4px;
+    }
+
+    .stories::after {
+        content: none;
+    }
+
+    .posts {
+        gap: 24px;
+    }
+
+    .post {
+        border: 1px solid #DBDBDB;
+        border-radius: 4px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+        background-color: #FAFAFA;
+    }
+
+    .content {
+        margin: unset;
+    }
+}
