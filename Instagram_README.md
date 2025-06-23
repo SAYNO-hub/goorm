@@ -2,7 +2,7 @@
 
 ## 1. 프로젝트 개요
 
-- **프로젝트명** : Instagram Mock Web
+- **프로젝트명** : Instagram Web Mockup
 - **목적** : HTML/CSS 학습 및 UI 구현 연습을 위해 인스타그램의 주요 화면을 정적 웹 페이지로 모사 
 - **기술 스택**: HTML5, CSS3
 - **주요 기능**:
