@@ -1,0 +1,94 @@
+.video-grid {
+    /* grid 를 이용 */
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+
+    column-gap: 16px;
+    row-gap: 40px;
+    /* gap : 40px 16px; 이랑 동일*/
+
+}
+
+/* 작아지면 하나가 되게 하고 싶은데 안되는 중 */
+/* @media (max-width: 280px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 281px) and (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+/* 썸네일 사진 위에 영상 시간 올려줘야 함 > absolute 사용 */
+.video-time {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+}
+
+.video-info-grid {
+    display: grid;
+    /* 50px은 channel-picture 한테 주고 1fr(프랙션)은 video-info 한테 준다*/
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+.video-author {
+    margin-bottom: 4px;
+}
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author, 
+.video-stats {
+    font-size: 12px;
+    color: #AAAAAA;
+}

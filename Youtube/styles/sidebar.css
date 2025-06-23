@@ -1,0 +1,37 @@
+/* 스크롤 해도 위치가 고정되어야 함 position: fixed 사용*/
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px; /* 0px이면 위로 올라가버림 */
+    background-color: #212121FF;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebar-link {
+    height: 74px;
+
+    /* 안에 있는 요소를 중앙으로 맞춰주기 위해 사용되는 세트 3줄 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar-link:hover {
+    background-color: #4D4D4D;
+}
+
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+    /* margin-top: 4px; 으로 해도 됨. 비교해보기 */
+}
+
+.sidebar-link div {
+    font-size: 10px;
+}
