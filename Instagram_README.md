@@ -76,15 +76,15 @@
 
 ```
 project/
-├── index.html // 메인 HTML
+├── index.html # 메인 HTML
 ├── styles/
-│   ├── general.css // 공통 스타일
-│   ├── header.css // 헤더 UI 스타일
-│   ├── main.css // 사이드바 스타일
-│   └── side.css / 비디오 카드 스타일
+│   ├── general.css # 공통 스타일
+│   ├── header.css # 헤더 UI 스타일
+│   ├── main.css # 사이드바 스타일
+│   └── side.css # 비디오 카드 스타일
 ├── assets/
-│   ├── icons/ // 아이콘 이미지(svg)
-│   └── images/ // 피드 썸네일, 프로필 이미지
+│   ├── icons/ # 아이콘 이미지(svg)
+│   └── images/ # 피드 썸네일, 프로필 이미지
 ```
 
 ---
