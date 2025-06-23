@@ -2,7 +2,7 @@
 
 ## 1. 🎯 프로젝트 개요
 
-- **프로젝트명**: YouTube Clone Mockup
+- **프로젝트명**: YouTube Web Mockup
 - **목적**: HTML/CSS를 활용해 유튜브 메인 페이지 UI를 모방하며 웹 구조와 스타일링 기초를 익히기 위함
 - **기술 스택**: HTML5, CSS3
 - **주요 학습 목표**:
