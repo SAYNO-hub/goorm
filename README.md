@@ -1,7 +1,5 @@
 # goorm 프로젝트
 
----
-
 ## 목업 웹서비스 기획 및 개발
 
 ### 1. Instagram Web Mockup :
